@@ -244,9 +244,11 @@ public class NarrativeControl : MonoBehaviour
     private void ChangeToTutorial(bool change)
     {
             TUTORIAL.SetActive(change);
-            GAMEPLAY.SetActive(!change);
 
-            TutorialOn = change;
+        ChangeSceneManager.GoToSomeScene("Phase 1");
+            //GAMEPLAY.SetActive(!change);
+
+            //TutorialOn = change;
             
     }
 
