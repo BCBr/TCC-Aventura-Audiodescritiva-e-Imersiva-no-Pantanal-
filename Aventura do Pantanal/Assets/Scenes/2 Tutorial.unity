@@ -6469,21 +6469,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TapCount: 0
   MaxNextTapTime: 0.3
-  IntroOn: 1
-  IntroSoundsQtd: 2
+  IntroOn: 0
+  IntroSoundsQtd: 0
   IntroSoundCount: 0
   IntroAudio: {fileID: 1928827430}
   IntroAudios:
   - {fileID: 8300000, guid: 585084c10f836f046ab3d9dfab04c9b2, type: 3}
   - {fileID: 8300000, guid: b2680ee045701c048b72ee4adb43c31b, type: 3}
-  TutorialOn: 0
+  TutorialOn: 1
   TutSoundsQtd: 10
   TutSoundCount: 0
   TutorialBreak: 0
   TutorialAudio: {fileID: 1719810174}
   TutorialAudios:
-  - {fileID: 8300000, guid: 9c629d2738e3e13499710c9a5060f0da, type: 3}
-  - {fileID: 8300000, guid: 44f5ab3cbe9e1a64287e23155347ea4e, type: 3}
+  - {fileID: 8300000, guid: 142a0fbe2c9909446b469c28623dbc98, type: 3}
+  - {fileID: 8300000, guid: 6f34385c435f1134aadb7dd5697f05cb, type: 3}
   - {fileID: 8300000, guid: e1adabb07f9ed954da16bdc2f562f67a, type: 3}
   - {fileID: 8300000, guid: 72586d2e69a5d364ba8a65a48b840b62, type: 3}
   - {fileID: 8300000, guid: 4fd66f2f929de384687ad653b18e0aba, type: 3}
