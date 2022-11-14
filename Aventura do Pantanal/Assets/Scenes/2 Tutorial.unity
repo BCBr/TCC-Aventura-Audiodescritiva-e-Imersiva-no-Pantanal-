@@ -3333,7 +3333,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 602103591}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.17, y: 15.65, z: -26.69}
+  m_LocalPosition: {x: -0.17, y: 15.65, z: -15.84}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 455138463}
@@ -6469,7 +6469,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TapCount: 0
   MaxNextTapTime: 0.3
-  IntroOn: 0
+  IntroOn: 1
   IntroSoundsQtd: 0
   IntroSoundCount: 0
   IntroAudio: {fileID: 1928827430}
@@ -6478,20 +6478,23 @@ MonoBehaviour:
   - {fileID: 8300000, guid: b2680ee045701c048b72ee4adb43c31b, type: 3}
   TutorialOn: 1
   TutSoundsQtd: 10
-  TutSoundCount: 0
+  TutSoundCount: 4
   TutorialBreak: 0
   TutorialAudio: {fileID: 1719810174}
   TutorialAudios:
   - {fileID: 8300000, guid: 142a0fbe2c9909446b469c28623dbc98, type: 3}
   - {fileID: 8300000, guid: 6f34385c435f1134aadb7dd5697f05cb, type: 3}
-  - {fileID: 8300000, guid: e1adabb07f9ed954da16bdc2f562f67a, type: 3}
-  - {fileID: 8300000, guid: 72586d2e69a5d364ba8a65a48b840b62, type: 3}
-  - {fileID: 8300000, guid: 4fd66f2f929de384687ad653b18e0aba, type: 3}
-  - {fileID: 8300000, guid: e8ba3efd17fa3d9409fa9f9ccfc962b3, type: 3}
-  - {fileID: 8300000, guid: 3fa50b2795f3ff34ea14280397c6f856, type: 3}
-  - {fileID: 8300000, guid: cef04912155b55d41ac3a30794553a9f, type: 3}
-  - {fileID: 8300000, guid: 67b797e02c9102047ba587d4dad53b4e, type: 3}
-  - {fileID: 8300000, guid: de606d38cccab6a479da1bdb76e4d140, type: 3}
+  - {fileID: 8300000, guid: 9c5bacf9a88ff1447901be0b9863a2bd, type: 3}
+  - {fileID: 8300000, guid: 64bb07f9b431b464f948a642c2cd77b9, type: 3}
+  - {fileID: 8300000, guid: e7a4ac789c5c3234ca03e6d5fc4db532, type: 3}
+  - {fileID: 8300000, guid: fe1ff533b0e8280468a7f03e318ee2b1, type: 3}
+  - {fileID: 8300000, guid: 2243cc7f49a63ef44a47945ff0344b56, type: 3}
+  - {fileID: 8300000, guid: 7e600f4a77d23964eb247c507595d2f5, type: 3}
+  - {fileID: 8300000, guid: 05bb2298cf3adfd4fba68582fa925dbc, type: 3}
+  - {fileID: 8300000, guid: f0db2a6145679d8409786f8238f28eb2, type: 3}
+  - {fileID: 8300000, guid: 594fe1018ddaa9b43bceab7b1ac30f42, type: 3}
+  - {fileID: 8300000, guid: 6ac80394b5b28384abe0cf5ad3502394, type: 3}
+  - {fileID: 8300000, guid: 78ec58228e7a98c4fbc99d9ca9831de9, type: 3}
   TutCallAS: {fileID: 488664322}
   GuaracyTutT: {fileID: 1719810173}
   PosTutTransforms:
@@ -9452,7 +9455,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1774510805}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.17, y: 15.65, z: 12.04}
+  m_LocalPosition: {x: -0.17, y: 15.65, z: 4.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 455138463}
@@ -9467,7 +9470,7 @@ BoxCollider:
   m_GameObject: {fileID: 1774510805}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}

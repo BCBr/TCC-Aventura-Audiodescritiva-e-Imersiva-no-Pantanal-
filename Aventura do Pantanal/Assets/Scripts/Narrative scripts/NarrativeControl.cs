@@ -113,10 +113,10 @@ public class NarrativeControl : MonoBehaviour
                     {
                         Debug.Log("Chama o guia");
 
-                        if(TutSoundCount == 3)
+                        if(TutSoundCount == 4)
                             TutorialBreak = false;
 
-                        if(TutSoundCount >= 4 & TutSoundCount <= 7 & TutorialOn & !TutorialAudio.isPlaying)
+                        if(TutSoundCount >= 5 & TutSoundCount <= 7 & TutorialOn & !TutorialAudio.isPlaying)
                         {
                             TutCallAS.PlayOneShot(Calls[Random.Range(0,3)]);                       
                         }
@@ -187,7 +187,7 @@ public class NarrativeControl : MonoBehaviour
                         TutSoundCount = 0;
                         NarrativeGo = true;
                     }
-                    if(TutSoundCount >= 2 & TutSoundCount <= 7)
+                    if(TutSoundCount >= 4 & TutSoundCount <= 8)
                     {
                         TutorialBreak = true;
                     }
@@ -199,35 +199,35 @@ public class NarrativeControl : MonoBehaviour
 
     public void SetGuidePosition()
     {
-        if(TutSoundCount >= 4 & TutSoundCount <= 8 & TutorialAudio.isPlaying)
+        if(TutSoundCount >= 5 & TutSoundCount <= 8 & TutorialAudio.isPlaying)
                 {
                     PlayerTtut.transform.position = initialPosPlayerTut;
                     PlayerTtut.transform.rotation = GuaracyTutT.transform.rotation;
-                    GuaracyTutT.transform.position = PosTutTransforms[TutSoundCount-4].position;
+                    GuaracyTutT.transform.position = PosTutTransforms[TutSoundCount-5].position;
                 }
     }
 
     public void SetControlBreaks()
     {
-        if(TutSoundCount==4)
+        if(TutSoundCount==5)
         {
             playerControlT.SetBackBlock(true);
             playerControlT.SetLeftBlock(true);
             playerControlT.SetRightBlock(true);
             playerControlT.SetFrontBlock(false);
-        }else if(TutSoundCount==5)
+        }else if(TutSoundCount==6)
         {
             playerControlT.SetBackBlock(false);
             playerControlT.SetLeftBlock(true);
             playerControlT.SetRightBlock(true);
             playerControlT.SetFrontBlock(true);
-        }else if(TutSoundCount==6)
+        }else if(TutSoundCount==7)
         {
             playerControlT.SetBackBlock(true);
             playerControlT.SetLeftBlock(false);
             playerControlT.SetRightBlock(true);
             playerControlT.SetFrontBlock(true);
-        }else if(TutSoundCount==7)
+        }else if(TutSoundCount==8)
         {
             playerControlT.SetBackBlock(true);
             playerControlT.SetLeftBlock(true);
