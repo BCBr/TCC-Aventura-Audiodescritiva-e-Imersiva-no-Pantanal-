@@ -3348,8 +3348,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 602103591}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
+  m_IsTrigger: 1
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -4442,6 +4442,87 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 738723079}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &739219793
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1174209984}
+    m_Modifications:
+    - target: {fileID: 4284243793951026706, guid: 93c5ee2063d7dda4c8fb765df9a34a2a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2078052
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284243793951026706, guid: 93c5ee2063d7dda4c8fb765df9a34a2a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284243794439988086, guid: 93c5ee2063d7dda4c8fb765df9a34a2a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284243794439988086, guid: 93c5ee2063d7dda4c8fb765df9a34a2a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284243794439988086, guid: 93c5ee2063d7dda4c8fb765df9a34a2a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284243794439988086, guid: 93c5ee2063d7dda4c8fb765df9a34a2a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284243794439988086, guid: 93c5ee2063d7dda4c8fb765df9a34a2a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284243794439988086, guid: 93c5ee2063d7dda4c8fb765df9a34a2a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284243794439988086, guid: 93c5ee2063d7dda4c8fb765df9a34a2a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284243794439988086, guid: 93c5ee2063d7dda4c8fb765df9a34a2a, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284243794439988086, guid: 93c5ee2063d7dda4c8fb765df9a34a2a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284243794439988086, guid: 93c5ee2063d7dda4c8fb765df9a34a2a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284243794439988086, guid: 93c5ee2063d7dda4c8fb765df9a34a2a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284243794439988087, guid: 93c5ee2063d7dda4c8fb765df9a34a2a, type: 3}
+      propertyPath: m_Name
+      value: compass
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284243794439988087, guid: 93c5ee2063d7dda4c8fb765df9a34a2a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284243794545342453, guid: 93c5ee2063d7dda4c8fb765df9a34a2a, type: 3}
+      propertyPath: guaracy
+      value: 
+      objectReference: {fileID: 1719810172}
+    - target: {fileID: 4284243794545342453, guid: 93c5ee2063d7dda4c8fb765df9a34a2a, type: 3}
+      propertyPath: CallAudioSourcGuaracy
+      value: 
+      objectReference: {fileID: 488664322}
+    - target: {fileID: 4284243794545342453, guid: 93c5ee2063d7dda4c8fb765df9a34a2a, type: 3}
+      propertyPath: maxTalksPerOrientation
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 93c5ee2063d7dda4c8fb765df9a34a2a, type: 3}
 --- !u!1 &749015297
 GameObject:
   m_ObjectHideFlags: 0
@@ -5852,6 +5933,7 @@ Transform:
   m_Children:
   - {fileID: 1942188352}
   - {fileID: 61018744}
+  - {fileID: 1279828663}
   m_Father: {fileID: 455138463}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6479,7 +6561,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: b2680ee045701c048b72ee4adb43c31b, type: 3}
   TutorialOn: 1
   TutSoundsQtd: 13
-  TutSoundCount: 7
+  TutSoundCount: 0
   TutorialBreak: 0
   TutorialAudio: {fileID: 1719810174}
   TutorialAudios:
@@ -6549,6 +6631,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 069e8beecbb4c1c4da933ee425a09d31, type: 3}
   playerCollision: {fileID: 1412511915}
   Jaguar: {fileID: 1260964374}
+  compass: {fileID: 1286663040}
 --- !u!4 &1221780401
 Transform:
   m_ObjectHideFlags: 0
@@ -6836,6 +6919,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 0
+--- !u!4 &1279828663 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4284243794439988086, guid: 93c5ee2063d7dda4c8fb765df9a34a2a, type: 3}
+  m_PrefabInstance: {fileID: 739219793}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1283990208
 GameObject:
   m_ObjectHideFlags: 0
@@ -6931,6 +7019,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1283990208}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1286663040 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4284243794545342453, guid: 93c5ee2063d7dda4c8fb765df9a34a2a, type: 3}
+  m_PrefabInstance: {fileID: 739219793}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b761495adfef414e9775d146b56de97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1317186114
 GameObject:
   m_ObjectHideFlags: 0
@@ -9471,7 +9570,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1774510805}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -11357,7 +11456,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1942188351}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}

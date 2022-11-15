@@ -49,6 +49,8 @@ public class NarrativeControl : MonoBehaviour
 
     public JaguarIA Jaguar;
 
+    public Compass compass;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -61,7 +63,7 @@ public class NarrativeControl : MonoBehaviour
             playerControlT.SetLeftBlock(true);
             playerControlT.SetRightBlock(true);
             playerControlT.SetFrontBlock(true);
-            GuaracyTutT.transform.position = PosTutTransforms[4].position;
+            GuaracyTutT.transform.position = PosTutTransforms[5].position;
         }else
         {
             NarrativeGo = true;
@@ -116,15 +118,17 @@ public class NarrativeControl : MonoBehaviour
                         if(TutSoundCount == 4)
                             TutorialBreak = false;
 
-                        if(TutSoundCount >= 5 & TutSoundCount <= 7 & TutorialOn & !TutorialAudio.isPlaying)
+                        if(TutSoundCount >= 5 & TutSoundCount <= 9 & TutorialOn & !TutorialAudio.isPlaying)
                         {
-                            TutCallAS.PlayOneShot(Calls[Random.Range(0,3)]);                       
+                        //TutCallAS.PlayOneShot(Calls[Random.Range(0,3)]);
+                        compass.MessageGuaracySolicited();
                         }
 
                         if(!TutorialOn & !IntroOn & !GameplayAS.isPlaying)
                         {
-                            CallAS.PlayOneShot(Calls[Random.Range(0,3)]);
-                        }
+                        //CallAS.PlayOneShot(Calls[Random.Range(0,3)]);
+                        compass.MessageGuaracySolicited();
+                    }
 
                     }else if(TapCount==4)
                     {
