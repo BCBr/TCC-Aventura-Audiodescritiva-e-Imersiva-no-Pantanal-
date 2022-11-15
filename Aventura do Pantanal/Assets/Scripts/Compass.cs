@@ -23,6 +23,8 @@ public class Compass : MonoBehaviour
     public AudioClip[] OrientationDireita;
     public AudioClip[] OrientationTras;
 
+    public MakeVibrations makeVibration;
+
     void Start()
     {
         orientationIndiceRepetition = new int[6];
@@ -43,6 +45,8 @@ public class Compass : MonoBehaviour
         {
             //Debug.Log("Estou na sua frente");
             orientationIndiceMessage = 0;
+
+            makeVibration.PlayVibrationpattern1234repeatSeparadoPorVirgula("0, 0, 0, 100, -1");
         }
     }
     private void WhenFrenteEsquerda(Collider collider)
