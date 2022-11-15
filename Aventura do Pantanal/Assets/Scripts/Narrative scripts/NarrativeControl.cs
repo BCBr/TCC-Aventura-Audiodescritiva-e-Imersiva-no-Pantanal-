@@ -312,8 +312,10 @@ public class NarrativeControl : MonoBehaviour
             if(GameplayAS.isPlaying)
             {
                 playerGp.SetWalkFree(false);
+                setPlayerLookAtGuaracy();
                 //playerGp.SetRotationFree(false);
-            }else
+            }
+            else
             {
                 playerGp.SetWalkFree(true);
                 playerGp.SetRotationFree(true);
@@ -329,6 +331,7 @@ public class NarrativeControl : MonoBehaviour
             if(GameplayAS.isPlaying)
             {
                 playerGp.SetWalkFree(false);
+                setPlayerLookAtGuaracy();
                 //playerGp.SetRotationFree(false);
             }
         }
@@ -379,6 +382,7 @@ public class NarrativeControl : MonoBehaviour
             if(GameplayAS.isPlaying)
             {
                 playerGp.SetWalkFree(false);
+                setPlayerLookAtGuaracy();
                 //playerGp.SetRotationFree(false);
             }
         }
@@ -399,6 +403,7 @@ public class NarrativeControl : MonoBehaviour
             if(GameplayAS.isPlaying)
             {
                 playerGp.SetWalkFree(false);
+                setPlayerLookAtGuaracy();
                 //playerGp.SetRotationFree(false);
                 NarrativeGo = false;
             }else
@@ -417,6 +422,7 @@ public class NarrativeControl : MonoBehaviour
             if(GameplayAS.isPlaying)
             {
                 playerGp.SetWalkFree(false);
+                setPlayerLookAtGuaracy();
                 playerGp.SetRotationFree(false);
                 NarrativeGo = false;
             }else
@@ -441,6 +447,7 @@ public class NarrativeControl : MonoBehaviour
             if(GameplayAS.isPlaying)
             {
                 playerGp.SetWalkFree(false);
+                setPlayerLookAtGuaracy();
                 //playerGp.SetRotationFree(false);
                 NarrativeGo = false;
             }
