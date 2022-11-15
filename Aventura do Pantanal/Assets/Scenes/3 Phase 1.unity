@@ -6546,6 +6546,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1221780401}
   - component: {fileID: 1221780400}
+  - component: {fileID: 1221780402}
   m_Layer: 0
   m_Name: NarrativeControl
   m_TagString: Untagged
@@ -6600,7 +6601,7 @@ MonoBehaviour:
   - {fileID: 1928827429}
   PlayerTtut: {fileID: 1174209978}
   initialPosPlayerTut: {x: 0, y: 0, z: 0}
-  NarrativeCurrentPhase: 18
+  NarrativeCurrentPhase: 0
   CallAS: {fileID: 1200886232}
   Calls:
   - {fileID: 8300000, guid: 18315887dbc5cd844a7632a90be1910a, type: 3}
@@ -6674,6 +6675,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1221780402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221780399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4295666b1c65d3143a59ced9b674aff8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1260964367
 GameObject:
   m_ObjectHideFlags: 0

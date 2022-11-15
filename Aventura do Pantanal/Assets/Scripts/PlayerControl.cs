@@ -112,6 +112,12 @@ public class PlayerControl : MonoBehaviour
     public void SetWalkFree(bool canWalk)
     {
         IcanWalk = canWalk;
+
+        LeftBlock = canWalk;
+        RightBlock = canWalk;
+        FrontBlock = canWalk;
+        BackBlock = canWalk;
+        IcanRotate = canWalk;
     }
 
     private void OnTriggerEnter(Collider other) 

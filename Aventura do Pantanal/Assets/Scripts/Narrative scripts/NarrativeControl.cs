@@ -195,6 +195,8 @@ public class NarrativeControl : MonoBehaviour
                     {
                         TutorialBreak = true;
                     }
+                    if(TutSoundCount == 2)
+                        TutorialBreak = true;
                 }
             }
         }
@@ -209,6 +211,11 @@ public class NarrativeControl : MonoBehaviour
                     PlayerTtut.transform.rotation = GuaracyTutT.transform.rotation;
                     GuaracyTutT.transform.position = PosTutTransforms[TutSoundCount-5].position;
                 }
+    }
+
+    private void setPlayerLookAtGuaracy()
+    {
+        PlayerTtut.transform.LookAt(new Vector3(GuaracyTutT.transform.position.x, PlayerTtut.transform.position.y, GuaracyTutT.transform.position.z));
     }
 
     public void SetControlBreaks()
@@ -286,6 +293,7 @@ public class NarrativeControl : MonoBehaviour
             }
         }
     }
+
 
     private void VerifyNarrative()
     {
