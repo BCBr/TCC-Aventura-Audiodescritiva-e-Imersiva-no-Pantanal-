@@ -22,13 +22,21 @@ public class PlayerControl : MonoBehaviour
     private AudioSource myAS;
     public Joystick joystick;
     Rigidbody rigidbody;
+
+    private bool MakeStop;
+    private bool MakeWalk;
+
+    public MakeVibrations makeVibration;
     // Start is called before the first frame update
     void Awake()
     {
         rigidbody = gameObject.GetComponent<Rigidbody>();
         myAS = GetComponent<AudioSource>();
         myAS.clip = paths[0];
-    }
+
+        MakeStop = false;
+        MakeWalk = false;
+}
 
     // Update is called once per frame
     void FixedUpdate()
@@ -118,6 +126,7 @@ public class PlayerControl : MonoBehaviour
         FrontBlock = canWalk;
         BackBlock = canWalk;
         IcanRotate = canWalk;
+        SwitchVibration(canWalk);
     }
 
     private void OnTriggerEnter(Collider other) 
@@ -146,4 +155,19 @@ public class PlayerControl : MonoBehaviour
         }
     }
 
+
+    private void SwitchVibration(bool canWalk)
+    {
+        if(!canWalk && !MakeStop)
+        {
+            makeVibration.PlayVibrationpattern1234repeatSeparadoPorVirgula("0, 1000, 1000, 1000, -1");
+            MakeStop = true;
+            MakeWalk = false;
+        }else if(canWalk && !MakeWalk)
+        {
+            makeVibration.PlayVibrationpattern1234repeatSeparadoPorVirgula("0, 0, 0, 1000, -1");
+            MakeStop = false;
+            MakeWalk = true;
+        }
+    }
 }

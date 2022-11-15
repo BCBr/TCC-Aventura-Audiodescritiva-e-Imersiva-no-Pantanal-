@@ -202,6 +202,10 @@ PrefabInstance:
       propertyPath: maxTalksPerOrientation
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4284243794545342453, guid: 93c5ee2063d7dda4c8fb765df9a34a2a, type: 3}
+      propertyPath: makeVibration
+      value: 
+      objectReference: {fileID: 1221780402}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93c5ee2063d7dda4c8fb765df9a34a2a, type: 3}
 --- !u!4 &28905322 stripped
@@ -3040,6 +3044,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8a172598dea5c56448f2afbfeb213e9e, type: 3}
   - {fileID: 8300000, guid: fad2f7252c83dd64b8adedd43f856f7d, type: 3}
   joystick: {fileID: 473226224}
+  makeVibration: {fileID: 1221780402}
 --- !u!143 &573671020
 CharacterController:
   m_ObjectHideFlags: 0
@@ -5871,6 +5876,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8a172598dea5c56448f2afbfeb213e9e, type: 3}
   - {fileID: 8300000, guid: fad2f7252c83dd64b8adedd43f856f7d, type: 3}
   joystick: {fileID: 473226224}
+  makeVibration: {fileID: 0}
 --- !u!54 &1174209981
 Rigidbody:
   m_ObjectHideFlags: 0

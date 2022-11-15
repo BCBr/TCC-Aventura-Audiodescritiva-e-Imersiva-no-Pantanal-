@@ -2954,6 +2954,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8a172598dea5c56448f2afbfeb213e9e, type: 3}
   - {fileID: 8300000, guid: fad2f7252c83dd64b8adedd43f856f7d, type: 3}
   joystick: {fileID: 473226224}
+  makeVibration: {fileID: 0}
 --- !u!143 &573671020
 CharacterController:
   m_ObjectHideFlags: 0
@@ -5859,6 +5860,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8a172598dea5c56448f2afbfeb213e9e, type: 3}
   - {fileID: 8300000, guid: fad2f7252c83dd64b8adedd43f856f7d, type: 3}
   joystick: {fileID: 473226224}
+  makeVibration: {fileID: 1221780402}
 --- !u!54 &1174209981
 Rigidbody:
   m_ObjectHideFlags: 0
