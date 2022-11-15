@@ -289,7 +289,7 @@ public class NarrativeControl : MonoBehaviour
 
     private void VerifyNarrative()
     {
-        if(NarrativeCurrentPhase == 7)
+        if(NarrativeCurrentPhase == 10)
         {
             playerGp.SetWalkFree(true);
             playerGp.SetRotationFree(true);
@@ -299,7 +299,7 @@ public class NarrativeControl : MonoBehaviour
             NarrativeGo = playerCollision.guideFound;
             playerCollision.guideFound = false;
         }
-        if(NarrativeCurrentPhase == 8)
+        if(NarrativeCurrentPhase == 11)
         {
             if(GameplayAS.isPlaying)
             {
@@ -316,7 +316,7 @@ public class NarrativeControl : MonoBehaviour
             NarrativeGo = playerCollision.AnimalCatched;
         }
 
-        if(NarrativeCurrentPhase == 9)
+        if(NarrativeCurrentPhase == 12)
         {
             if(GameplayAS.isPlaying)
             {
@@ -325,7 +325,7 @@ public class NarrativeControl : MonoBehaviour
             }
         }
 
-        if(NarrativeCurrentPhase == 11)
+        if(NarrativeCurrentPhase == 19)
         {
             playerGp.SetWalkFree(true);
             playerGp.SetRotationFree(true);
@@ -335,7 +335,7 @@ public class NarrativeControl : MonoBehaviour
             playerCollision.guideFound = false;
         }
 
-        if(NarrativeCurrentPhase == 12)
+        if(NarrativeCurrentPhase == 20)
         {
             playerGp.SetWalkFree(true);
             playerGp.SetRotationFree(true);
@@ -346,7 +346,7 @@ public class NarrativeControl : MonoBehaviour
             playerCollision.AnimalCatched = false;
         }
 
-        if(NarrativeCurrentPhase == 13)
+        if(NarrativeCurrentPhase == 21)
         {
             playerGp.SetWalkFree(true);
             playerGp.SetRotationFree(true);
@@ -357,7 +357,7 @@ public class NarrativeControl : MonoBehaviour
             playerCollision.IcanTouchAnimal = true;
         }
 
-        if(NarrativeCurrentPhase == 14)
+        if(NarrativeCurrentPhase == 22)
         {
             playerGp.SetWalkFree(true);
             playerGp.SetRotationFree(true);
@@ -366,7 +366,7 @@ public class NarrativeControl : MonoBehaviour
             NarrativeGo = playerCollision.AnimalCatched;
         }
 
-        if(NarrativeCurrentPhase == 15)
+        if(NarrativeCurrentPhase == 23)
         {
             if(GameplayAS.isPlaying)
             {
@@ -375,7 +375,7 @@ public class NarrativeControl : MonoBehaviour
             }
         }
 
-        if(NarrativeCurrentPhase == 20)
+        if(NarrativeCurrentPhase == 31)
         {
             playerGp.SetWalkFree(true);
             playerGp.SetRotationFree(true);
@@ -386,7 +386,7 @@ public class NarrativeControl : MonoBehaviour
             playerCollision.IcanTouchAnimal = true;
         }
 
-        if(NarrativeCurrentPhase == 21)
+        if(NarrativeCurrentPhase == 32)
         {
             if(GameplayAS.isPlaying)
             {
@@ -404,7 +404,7 @@ public class NarrativeControl : MonoBehaviour
             } 
         }
 
-        if(NarrativeCurrentPhase == 22)
+        if(NarrativeCurrentPhase == 33)
         {
             if(GameplayAS.isPlaying)
             {
@@ -417,7 +417,7 @@ public class NarrativeControl : MonoBehaviour
             }
         }
 
-        if(NarrativeCurrentPhase == 27)
+        if(NarrativeCurrentPhase == 42)
         {
             playerGp.SetWalkFree(true);
             playerGp.SetRotationFree(true);
@@ -428,7 +428,7 @@ public class NarrativeControl : MonoBehaviour
             playerCollision.IcanTouchAnimal = true;
         }
 
-        if(NarrativeCurrentPhase == 28)
+        if(NarrativeCurrentPhase == 44)
         {
             if(GameplayAS.isPlaying)
             {
