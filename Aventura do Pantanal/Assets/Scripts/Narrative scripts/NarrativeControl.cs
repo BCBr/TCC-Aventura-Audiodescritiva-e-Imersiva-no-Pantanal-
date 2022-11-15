@@ -187,7 +187,7 @@ public class NarrativeControl : MonoBehaviour
                         TutSoundCount = 0;
                         NarrativeGo = true;
                     }
-                    if(TutSoundCount >= 4 & TutSoundCount <= 8)
+                    if(TutSoundCount >= 4 & TutSoundCount <= 9)
                     {
                         TutorialBreak = true;
                     }
@@ -199,7 +199,7 @@ public class NarrativeControl : MonoBehaviour
 
     public void SetGuidePosition()
     {
-        if(TutSoundCount >= 5 & TutSoundCount <= 8 & TutorialAudio.isPlaying)
+        if(TutSoundCount >= 5 & TutSoundCount <= 10 & TutorialAudio.isPlaying)
                 {
                     PlayerTtut.transform.position = initialPosPlayerTut;
                     PlayerTtut.transform.rotation = GuaracyTutT.transform.rotation;
@@ -233,7 +233,19 @@ public class NarrativeControl : MonoBehaviour
             playerControlT.SetLeftBlock(true);
             playerControlT.SetRightBlock(false);
             playerControlT.SetFrontBlock(true);
-        } 
+        }else if (TutSoundCount == 9)
+        {
+            playerControlT.SetBackBlock(false);
+            playerControlT.SetLeftBlock(false);
+            playerControlT.SetRightBlock(false);
+            playerControlT.SetFrontBlock(false);
+        } else if (TutSoundCount == 10)
+        {
+            playerControlT.SetBackBlock(true);
+            playerControlT.SetLeftBlock(true);
+            playerControlT.SetRightBlock(true);
+            playerControlT.SetFrontBlock(true);
+        }
     }
 
     public void SetTutorialBreak(bool Break)
@@ -245,7 +257,7 @@ public class NarrativeControl : MonoBehaviour
     {
             TUTORIAL.SetActive(change);
 
-        ChangeSceneManager.GoToSomeScene("Phase 1");
+        ChangeSceneManager.GoToSomeScene("3 Phase 1");
             //GAMEPLAY.SetActive(!change);
 
             //TutorialOn = change;
