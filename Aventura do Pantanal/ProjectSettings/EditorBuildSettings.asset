@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/TelaInicial.unity
+    guid: 133fd99f73bb75b4f956f1b4d2f810f9
+  - enabled: 1
     path: Assets/Scenes/3 Phase 1.unity
     guid: ad067d54e6e92c348aa3909e15b148e4
   - enabled: 1
@@ -14,9 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/1 Introdu\xE7\xE3o.unity"
     guid: 19b2646b5e17bdc43aded36870e0a027
-  - enabled: 1
-    path: Assets/Scenes/TelaInicial.unity
-    guid: 133fd99f73bb75b4f956f1b4d2f810f9
   - enabled: 1
     path: Assets/Scenes/SelecaoDeFases.unity
     guid: 8feb9bbd91b1c1448a2c632da2d1b3f0

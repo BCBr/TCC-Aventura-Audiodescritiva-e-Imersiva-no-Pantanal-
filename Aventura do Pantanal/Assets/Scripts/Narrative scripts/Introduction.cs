@@ -49,6 +49,30 @@ public class Introduction : MonoBehaviour
     public void TapCounter()
     {
 
+        if (Input.touchCount == 1)
+        {
+            Touch touch = Input.GetTouch(0);
+
+            if (touch.phase == TouchPhase.Began)
+            {
+                NewTime = Time.time + MaxNextTapTime;
+            }
+
+            if (touch.phase == TouchPhase.Ended)
+            {
+                if (NewTime >= Time.time)
+                {
+                    TapCount++;
+                    NewTime = Time.time + MaxNextTapTime;
+                }
+                else
+                {
+                    TapCount = 0;
+                    NewTime = 0;
+                }
+            }
+        }
+
         if (TapCount > 0)
         {
             if (NewTime < Time.time)
