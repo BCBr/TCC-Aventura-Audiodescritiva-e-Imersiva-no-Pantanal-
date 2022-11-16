@@ -13,6 +13,9 @@ public class Introduction : MonoBehaviour
     [SerializeField]
     private int currentAudioClip = 0;
 
+    public int TapCount;
+    public float MaxNextTapTime = 0.3f;
+    float NewTime;
     void Start()
     {
         
@@ -23,6 +26,7 @@ public class Introduction : MonoBehaviour
     {
         goToNextAudioClip();
         goToNextScene();
+        TapCounter();
     }
 
     private void goToNextAudioClip()
@@ -39,6 +43,24 @@ public class Introduction : MonoBehaviour
         if(!audioSource.isPlaying && currentAudioClip >= soundsOfIntroduction.Length)
         {
             ChangeSceneManager.GoToSomeScene("2 Tutorial");
+        }
+    }
+
+    public void TapCounter()
+    {
+
+        if (TapCount > 0)
+        {
+            if (NewTime < Time.time)
+            {
+                if (TapCount == 4)
+                {
+                    ChangeSceneManager.GoToSomeScene("SelecaoDeFases");
+                }
+
+                TapCount = 0;
+                //NewTime = 0;
+            }
         }
     }
 }

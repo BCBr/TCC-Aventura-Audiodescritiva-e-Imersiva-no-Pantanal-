@@ -108,41 +108,47 @@ public class NarrativeControl : MonoBehaviour
         }
 
         if(TapCount>0)
+        {
+            if (NewTime < Time.time)
             {
-                if(NewTime<Time.time)
+                if (TapCount == 1)
                 {
-                    if(TapCount==1)
+                    Debug.Log("Chama o guia");
+
+                    if (TutSoundCount == 4)
+                        TutorialBreak = false;
+
+                    if (TutSoundCount >= 5 & TutSoundCount <= 9 & TutorialOn & !TutorialAudio.isPlaying)
                     {
-                        Debug.Log("Chama o guia");
-
-                        if(TutSoundCount == 4)
-                            TutorialBreak = false;
-
-                        if(TutSoundCount >= 5 & TutSoundCount <= 9 & TutorialOn & !TutorialAudio.isPlaying)
-                        {
                         //TutCallAS.PlayOneShot(Calls[Random.Range(0,3)]);
                         compass.MessageGuaracySolicited();
-                        }
+                    }
 
-                        if(!TutorialOn & !IntroOn & !GameplayAS.isPlaying)
-                        {
+                    if (!TutorialOn & !IntroOn & !GameplayAS.isPlaying)
+                    {
                         //CallAS.PlayOneShot(Calls[Random.Range(0,3)]);
                         compass.MessageGuaracySolicited();
                     }
 
-                    }else if(TapCount==4)
+                }
+                else if (TapCount == 4)
+                {
+                    Debug.Log("Aciona o tutorial");
+                    if (TutSoundCount == 2 & TutorialOn)
                     {
-                        Debug.Log("Aciona o tutorial");
-                        if(TutSoundCount == 2 & TutorialOn)
-                        {
-                            TutorialBreak = false;
-                        }
+                        TutorialBreak = false;
                     }
 
-                    TapCount =0;
-                    //NewTime = 0;
+                    if(TutSoundCount > 2 || !TutorialOn)
+                    {
+                        ChangeSceneManager.GoToSomeScene("SelecaoDeFases");
+                    }
                 }
+                
+                TapCount = 0;
+                //NewTime = 0;
             }
+        }
     }
 
     public void IntroControl()
@@ -450,6 +456,10 @@ public class NarrativeControl : MonoBehaviour
                 setPlayerLookAtGuaracy();
                 //playerGp.SetRotationFree(false);
                 NarrativeGo = false;
+            }
+            if (!GameplayAS.isPlaying)
+            {
+                ChangeSceneManager.GoToSomeScene("SelecaoDeFases");
             }
         }
     }

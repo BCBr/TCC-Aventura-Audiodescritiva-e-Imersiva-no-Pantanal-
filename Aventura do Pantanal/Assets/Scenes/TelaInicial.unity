@@ -237,6 +237,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 658775b47dd044e478546c6ddf3c6046, type: 3}
   - {fileID: 8300000, guid: 46491963ef9aaa04486dda9c2e9dd4ee, type: 3}
   currentAudioClip: 0
+  canActivateNextAudioClip: 1
+  TapCount: 0
+  MaxNextTapTime: 0.3
 --- !u!4 &655256375
 Transform:
   m_ObjectHideFlags: 0

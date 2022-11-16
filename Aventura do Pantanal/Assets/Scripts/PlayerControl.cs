@@ -121,11 +121,11 @@ public class PlayerControl : MonoBehaviour
     {
         IcanWalk = canWalk;
 
-        LeftBlock = canWalk;
-        RightBlock = canWalk;
-        FrontBlock = canWalk;
-        BackBlock = canWalk;
-        IcanRotate = canWalk;
+        LeftBlock = !canWalk;
+        RightBlock = !canWalk;
+        FrontBlock = !canWalk;
+        BackBlock = !canWalk;
+        IcanRotate = !canWalk;
         SwitchVibration(canWalk);
     }
 
